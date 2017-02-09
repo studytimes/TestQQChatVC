@@ -1,0 +1,2 @@
+# TestQQChatVC
+看了下关于UITableView优化的文章，想写一个demo测试下关于自动计算高度的问题
