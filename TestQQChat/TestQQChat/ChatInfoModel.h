@@ -10,4 +10,10 @@
 
 @interface ChatInfoModel : NSObject
 
+@property (nonatomic, strong) NSString *messageText;
+
+@property (nonatomic, assign) BOOL isMySender;
+
+//@property 
+
 @end
