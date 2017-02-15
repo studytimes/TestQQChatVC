@@ -45,7 +45,7 @@
 
     chatLabel.text = chatModel.messageText;
     //判断是不是自己发送的
-    if (chatModel.isMySender) {//chat_send_imagemask
+    if (chatModel.isMySender) {//自己发送的头像显示在右侧
         mBubbleImageView.image = [[UIImage imageNamed:@"chat_send_nor"] stretchableImageWithLeftCapWidth:30 topCapHeight:30];
 
         [mHead mas_updateConstraints:^(MASConstraintMaker *make) {
@@ -56,17 +56,17 @@
         }];
         
         [chatLabel mas_updateConstraints:^(MASConstraintMaker *make) {
-            make.left.equalTo(self.contentView.mas_left).offset(65);
-            make.top.equalTo(self.contentView.mas_top).offset(12);
-            make.bottom.equalTo(self.contentView.mas_bottom).offset(-12);
-            make.right.equalTo(self.contentView.mas_right).offset(-60);
+            make.left.mas_greaterThanOrEqualTo(self.contentView.mas_left).offset(65);
+            make.top.equalTo(self.contentView.mas_top).offset(10);
+            make.bottom.equalTo(self.contentView.mas_bottom).offset(-10);
+            make.right.equalTo(self.contentView.mas_right).offset(-65);
         }];
 
         [mBubbleImageView mas_updateConstraints:^(MASConstraintMaker *make) {
-            make.left.equalTo(self.contentView.mas_left).offset(50);
-            make.top.equalTo(self.contentView.mas_top).offset(2);
-            make.bottom.equalTo(self.contentView.mas_bottom).offset(-2);
-            make.right.equalTo(self.contentView.mas_right).offset(-50);
+            make.left.equalTo(chatLabel.mas_left).offset(-15);
+            make.top.equalTo(chatLabel.mas_top).offset(-10);
+            make.bottom.equalTo(chatLabel.mas_bottom).offset(10);
+            make.right.equalTo(chatLabel.mas_right).offset(15);
         }];
 
         
@@ -83,20 +83,19 @@
 
         [chatLabel mas_updateConstraints:^(MASConstraintMaker *make) {
             make.left.equalTo(self.contentView.mas_left).offset(65);
-            make.top.equalTo(self.contentView.mas_top).offset(12);
-            make.bottom.equalTo(self.contentView.mas_bottom).offset(-12);
-            make.right.equalTo(self.contentView.mas_right).offset(-65);
+            make.top.equalTo(self.contentView.mas_top).offset(10);
+            make.bottom.equalTo(self.contentView.mas_bottom).offset(-10);
+            make.right.lessThanOrEqualTo(self.contentView.mas_right).offset(-65);
         }];
         
         [mBubbleImageView mas_updateConstraints:^(MASConstraintMaker *make) {
-            make.left.equalTo(self.contentView.mas_left).offset(50);
-            make.top.equalTo(self.contentView.mas_top).offset(2);
-            make.bottom.equalTo(self.contentView.mas_bottom).offset(-2);
-            make.right.equalTo(self.contentView.mas_right).offset(-50);
+            make.left.equalTo(chatLabel.mas_left).offset(-15);
+            make.top.equalTo(chatLabel.mas_top).offset(-10);
+            make.bottom.equalTo(chatLabel.mas_bottom).offset(10);
+            make.right.equalTo(chatLabel.mas_right).offset(15);
         }];
 
     }
-    
 
 }
 

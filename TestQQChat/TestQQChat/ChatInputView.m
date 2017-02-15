@@ -36,6 +36,7 @@
             make.left.equalTo(self.mas_left).offset(5);
             make.top.equalTo(self.mas_top).offset(5);
             make.right.equalTo(self.mas_right).offset(-5);
+            make.bottom.equalTo(self.mas_bottom).offset(-5);
             make.height.equalTo(@30);
         }];
         
@@ -52,6 +53,7 @@
 
 -(void)keyboardChange:(NSNotification *)notification
 {
+    
     NSDictionary *userInfo = [notification userInfo];
     
     NSTimeInterval animationDuration;
@@ -68,19 +70,20 @@
     
     if (notification.name == UIKeyboardWillShowNotification) {
         
-        [self mas_updateConstraints:^(MASConstraintMaker *make) {
-            make.height.mas_equalTo(keyboardEndFrame.size.height+40);
+        [self.inputTextView mas_updateConstraints:^(MASConstraintMaker *make) {
+            make.bottom.mas_equalTo(-keyboardEndFrame.size.height-5);
         }];
         
     } else{
-        [self mas_updateConstraints:^(MASConstraintMaker *make) {
-            make.height.mas_equalTo(40);
+        [self.inputTextView mas_updateConstraints:^(MASConstraintMaker *make) {
+            make.bottom.mas_equalTo(-5);
         }];
 
     }
     
     [self.superview layoutIfNeeded];
     [UIView commitAnimations];
+    
 }
 
 -(BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text{
@@ -88,8 +91,14 @@
     //是否点击了发送按钮
     if ([text isEqualToString:@"\n"]) {
         if (![textView.text isEqualToString:@""]){
+            if ([self.delegate respondsToSelector:@selector(sendMessage:)]) {
+                [self.delegate sendMessage:textView.text];
+            }
             textView.text = @"";
+            [self textViewDidChange:textView];
+
         }
+        [textView resignFirstResponder];
         return NO;
     }
     return YES;
@@ -99,12 +108,12 @@
 
     CGSize size = [textView sizeThatFits:CGSizeMake(textView.contentSize.width, 0)];
     
-//    NSLog()
+//    NSLog(@"%@", NSStringFromCGSize(size));
     
     float contentHeight ;
-    if (size.height >=100) {
+    if (size.height >=80) {
         textView.scrollEnabled = YES;
-        contentHeight = 100;
+        contentHeight = 80;
     } else {
         textView.scrollEnabled = NO;
         contentHeight = size.height;
@@ -114,14 +123,13 @@
         [textView mas_updateConstraints:^(MASConstraintMaker *make) {
             make.height.mas_equalTo(contentHeight);
         }];
-        
-//        [self mas_updateConstraints:^(MASConstraintMaker *make) {
-//            make.height.mas_equalTo()
-//        }]
-        
     }
     
+    [self layoutIfNeeded];
+    
 }
+
+
 
 -(UITextView *)inputTextView{
 
@@ -136,5 +144,9 @@
     
     return _inputTextView;
 }
+
+//-(CGSize)intrinsicContentSize{
+//
+//}
 
 @end

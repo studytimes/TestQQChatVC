@@ -13,7 +13,7 @@
 #import "ChatInputView.h"
 #import "Masonry.h"
 
-@interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
+@interface ViewController ()<UITableViewDelegate,UITableViewDataSource,UserSenderInfoDelegate>
 {
     NSMutableArray *dataArr;
 }
@@ -37,15 +37,22 @@
     for (int i=0; i<5; i++) {
         ChatInfoModel *tmpModel = [[ChatInfoModel alloc] init];
         tmpModel.messageText = [NSString stringWithFormat:@"adosjfladsjfladjsfkladjsklfhjadsjkfhjkadshfkjadhfjkhajfhjhfajkhfjkahfjkh"];
+        if (i == 0) {
+            tmpModel.messageText = @"adsfasd";
+        }else if ( i == 1){
+            tmpModel.messageText = @"213123";
+
+        }
+        
         tmpModel.isMySender = i%2 == 0? YES :NO;
         [dataArr addObject:tmpModel];
     }
     [self.mytable registerClass:[ChatViewCell class] forCellReuseIdentifier:@"ChatViewCell"];
  
     [self.view addSubview:self.bottomInputView];
+    
     [self.bottomInputView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.bottom.left.right.equalTo(self.view);
-        make.height.mas_equalTo(@40);
     }];
     
 }
@@ -70,6 +77,7 @@
     return [tableView fd_heightForCellWithIdentifier:@"ChatViewCell" configuration:^(ChatViewCell *cell) {
         [self configModelCell:cell atIndexPath:indexPath];
     }];
+    
 }
 
 
@@ -84,7 +92,17 @@
     }
     _bottomInputView = [[ChatInputView alloc] init];
     _bottomInputView.backgroundColor = [UIColor redColor];
+    _bottomInputView.delegate = self;
     return _bottomInputView;
+}
+
+- (void)sendMessage:(NSString *)message{
+    ChatInfoModel *tmpmodel = [[ChatInfoModel alloc] init];
+    tmpmodel.messageText = message;
+    tmpmodel.isMySender = YES;
+    [dataArr addObject:tmpmodel];
+    [self.mytable reloadData];
+
 }
 
 - (void)didReceiveMemoryWarning {

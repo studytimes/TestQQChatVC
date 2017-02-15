@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA0A05441E54394500115706 /* SmapleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0A05421E54394500115706 /* SmapleTableViewCell.m */; };
+		FA0A05451E54394500115706 /* SmapleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA0A05431E54394500115706 /* SmapleTableViewCell.xib */; };
 		FA178EAB1E4C0B5B00937BD0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FA178EAA1E4C0B5B00937BD0 /* main.m */; };
 		FA178EAE1E4C0B5B00937BD0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FA178EAD1E4C0B5B00937BD0 /* AppDelegate.m */; };
 		FA178EB11E4C0B5B00937BD0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA178EB01E4C0B5B00937BD0 /* ViewController.m */; };
@@ -34,6 +36,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FA0A05411E54394500115706 /* SmapleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmapleTableViewCell.h; sourceTree = "<group>"; };
+		FA0A05421E54394500115706 /* SmapleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SmapleTableViewCell.m; sourceTree = "<group>"; };
+		FA0A05431E54394500115706 /* SmapleTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SmapleTableViewCell.xib; sourceTree = "<group>"; };
 		FA178EA61E4C0B5A00937BD0 /* TestQQChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestQQChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA178EAA1E4C0B5B00937BD0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FA178EAC1E4C0B5B00937BD0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -157,6 +162,9 @@
 			children = (
 				FA3400D81E52AEA60010F0F1 /* ChatInputView.h */,
 				FA3400D91E52AEA60010F0F1 /* ChatInputView.m */,
+				FA0A05411E54394500115706 /* SmapleTableViewCell.h */,
+				FA0A05421E54394500115706 /* SmapleTableViewCell.m */,
+				FA0A05431E54394500115706 /* SmapleTableViewCell.xib */,
 			);
 			name = ChatInputView;
 			sourceTree = "<group>";
@@ -269,6 +277,7 @@
 			files = (
 				FACE9B131E51B11E00A964D3 /* Info.plist in Resources */,
 				FA178EB91E4C0B5C00937BD0 /* LaunchScreen.storyboard in Resources */,
+				FA0A05451E54394500115706 /* SmapleTableViewCell.xib in Resources */,
 				FA178EB61E4C0B5C00937BD0 /* Assets.xcassets in Resources */,
 				FA178EB41E4C0B5B00937BD0 /* Main.storyboard in Resources */,
 			);
@@ -294,6 +303,7 @@
 				FACE9B2C1E51BAA200A964D3 /* UITableView+FDTemplateLayoutCell.m in Sources */,
 				FACE9B1A1E51B11E00A964D3 /* NSArray+MASAdditions.m in Sources */,
 				FACE9B191E51B11E00A964D3 /* MASViewConstraint.m in Sources */,
+				FA0A05441E54394500115706 /* SmapleTableViewCell.m in Sources */,
 				FACE9B181E51B11E00A964D3 /* MASViewAttribute.m in Sources */,
 				FACE9B1C1E51B11E00A964D3 /* View+MASAdditions.m in Sources */,
 				FA178EAE1E4C0B5B00937BD0 /* AppDelegate.m in Sources */,
