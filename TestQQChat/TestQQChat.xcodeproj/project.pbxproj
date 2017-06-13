@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E6D06E312A7035E60B1D842 /* libPods-TestQQChat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D9B2CE516C0F31F81789876 /* libPods-TestQQChat.a */; };
 		FA0A05441E54394500115706 /* SmapleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0A05421E54394500115706 /* SmapleTableViewCell.m */; };
 		FA0A05451E54394500115706 /* SmapleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA0A05431E54394500115706 /* SmapleTableViewCell.xib */; };
+		FA0A05491E545B6000115706 /* TestNSUrl.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0A05481E545B6000115706 /* TestNSUrl.m */; };
 		FA178EAB1E4C0B5B00937BD0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FA178EAA1E4C0B5B00937BD0 /* main.m */; };
 		FA178EAE1E4C0B5B00937BD0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FA178EAD1E4C0B5B00937BD0 /* AppDelegate.m */; };
 		FA178EB11E4C0B5B00937BD0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA178EB01E4C0B5B00937BD0 /* ViewController.m */; };
@@ -17,6 +19,13 @@
 		FA178EB91E4C0B5C00937BD0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA178EB71E4C0B5C00937BD0 /* LaunchScreen.storyboard */; };
 		FA178EC31E4C157000937BD0 /* ChatViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA178EC21E4C157000937BD0 /* ChatViewCell.m */; };
 		FA3400DA1E52AEA60010F0F1 /* ChatInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3400D91E52AEA60010F0F1 /* ChatInputView.m */; };
+		FA477EBD1E58225D008D5811 /* TestSocketManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FA477EBC1E58225D008D5811 /* TestSocketManager.m */; };
+		FA477EC41E582F34008D5811 /* Documentation.html in Resources */ = {isa = PBXBuildFile; fileRef = FA477EBF1E582F34008D5811 /* Documentation.html */; };
+		FA477EC51E582F34008D5811 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = FA477EC11E582F34008D5811 /* GCDAsyncSocket.m */; };
+		FA477EC61E582F34008D5811 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = FA477EC31E582F34008D5811 /* GCDAsyncUdpSocket.m */; };
+		FA477EC71E582FC7008D5811 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA0A054B1E545B8A00115706 /* CFNetwork.framework */; };
+		FA477ECA1E58301C008D5811 /* TestCocoAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = FA477EC91E58301C008D5811 /* TestCocoAsyncSocket.m */; };
+		FA4E98F71E61225A0094C021 /* TestWebSocketRocket.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4E98F61E61225A0094C021 /* TestWebSocketRocket.m */; };
 		FACE9B131E51B11E00A964D3 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FACE9AF91E51B11E00A964D3 /* Info.plist */; };
 		FACE9B141E51B11E00A964D3 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = FACE9AFB1E51B11E00A964D3 /* MASCompositeConstraint.m */; };
 		FACE9B151E51B11E00A964D3 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = FACE9AFE1E51B11E00A964D3 /* MASConstraint.m */; };
@@ -36,9 +45,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		461DE7EFA7DD619288992CB8 /* Pods-TestQQChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestQQChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestQQChat/Pods-TestQQChat.debug.xcconfig"; sourceTree = "<group>"; };
+		7D9B2CE516C0F31F81789876 /* libPods-TestQQChat.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestQQChat.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		82CB2E393898B7A27D971B22 /* Pods-TestQQChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestQQChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestQQChat/Pods-TestQQChat.release.xcconfig"; sourceTree = "<group>"; };
 		FA0A05411E54394500115706 /* SmapleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmapleTableViewCell.h; sourceTree = "<group>"; };
 		FA0A05421E54394500115706 /* SmapleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SmapleTableViewCell.m; sourceTree = "<group>"; };
 		FA0A05431E54394500115706 /* SmapleTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SmapleTableViewCell.xib; sourceTree = "<group>"; };
+		FA0A05471E545B6000115706 /* TestNSUrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestNSUrl.h; sourceTree = "<group>"; };
+		FA0A05481E545B6000115706 /* TestNSUrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestNSUrl.m; sourceTree = "<group>"; };
+		FA0A054B1E545B8A00115706 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		FA178EA61E4C0B5A00937BD0 /* TestQQChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestQQChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA178EAA1E4C0B5B00937BD0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FA178EAC1E4C0B5B00937BD0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -53,6 +68,17 @@
 		FA178EC21E4C157000937BD0 /* ChatViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatViewCell.m; sourceTree = "<group>"; };
 		FA3400D81E52AEA60010F0F1 /* ChatInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatInputView.h; sourceTree = "<group>"; };
 		FA3400D91E52AEA60010F0F1 /* ChatInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatInputView.m; sourceTree = "<group>"; };
+		FA477EBB1E58225D008D5811 /* TestSocketManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestSocketManager.h; sourceTree = "<group>"; };
+		FA477EBC1E58225D008D5811 /* TestSocketManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestSocketManager.m; sourceTree = "<group>"; };
+		FA477EBF1E582F34008D5811 /* Documentation.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Documentation.html; sourceTree = "<group>"; };
+		FA477EC01E582F34008D5811 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
+		FA477EC11E582F34008D5811 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
+		FA477EC21E582F34008D5811 /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		FA477EC31E582F34008D5811 /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
+		FA477EC81E58301C008D5811 /* TestCocoAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestCocoAsyncSocket.h; sourceTree = "<group>"; };
+		FA477EC91E58301C008D5811 /* TestCocoAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestCocoAsyncSocket.m; sourceTree = "<group>"; };
+		FA4E98F51E61225A0094C021 /* TestWebSocketRocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestWebSocketRocket.h; sourceTree = "<group>"; };
+		FA4E98F61E61225A0094C021 /* TestWebSocketRocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestWebSocketRocket.m; sourceTree = "<group>"; };
 		FACE9AF91E51B11E00A964D3 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FACE9AFA1E51B11E00A964D3 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
 		FACE9AFB1E51B11E00A964D3 /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
@@ -96,17 +122,48 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA477EC71E582FC7008D5811 /* CFNetwork.framework in Frameworks */,
+				5E6D06E312A7035E60B1D842 /* libPods-TestQQChat.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7BF88BFBF84FF766A1B5343F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				461DE7EFA7DD619288992CB8 /* Pods-TestQQChat.debug.xcconfig */,
+				82CB2E393898B7A27D971B22 /* Pods-TestQQChat.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FA0A05461E545B1700115706 /* NSUrlGroup */ = {
+			isa = PBXGroup;
+			children = (
+				FA0A05471E545B6000115706 /* TestNSUrl.h */,
+				FA0A05481E545B6000115706 /* TestNSUrl.m */,
+			);
+			name = NSUrlGroup;
+			sourceTree = "<group>";
+		};
+		FA0A054A1E545B8A00115706 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA0A054B1E545B8A00115706 /* CFNetwork.framework */,
+				7D9B2CE516C0F31F81789876 /* libPods-TestQQChat.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FA178E9D1E4C0B5A00937BD0 = {
 			isa = PBXGroup;
 			children = (
 				FA178EA81E4C0B5A00937BD0 /* TestQQChat */,
 				FA178EA71E4C0B5A00937BD0 /* Products */,
+				FA0A054A1E545B8A00115706 /* Frameworks */,
+				7BF88BFBF84FF766A1B5343F /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -121,6 +178,10 @@
 		FA178EA81E4C0B5A00937BD0 /* TestQQChat */ = {
 			isa = PBXGroup;
 			children = (
+				FA4E98F41E6122390094C021 /* WebSocket */,
+				FA477EBE1E582F34008D5811 /* GCDAsynSocket */,
+				FA477EBA1E58224B008D5811 /* BaseSocket */,
+				FA0A05461E545B1700115706 /* NSUrlGroup */,
 				FA3400D71E52ADF70010F0F1 /* ChatInputView */,
 				FACE9B211E51BAA200A964D3 /* FDTemplateLayoutCell */,
 				FACE9AF81E51B11E00A964D3 /* Masonry */,
@@ -167,6 +228,38 @@
 				FA0A05431E54394500115706 /* SmapleTableViewCell.xib */,
 			);
 			name = ChatInputView;
+			sourceTree = "<group>";
+		};
+		FA477EBA1E58224B008D5811 /* BaseSocket */ = {
+			isa = PBXGroup;
+			children = (
+				FA477EBB1E58225D008D5811 /* TestSocketManager.h */,
+				FA477EBC1E58225D008D5811 /* TestSocketManager.m */,
+				FA477EC81E58301C008D5811 /* TestCocoAsyncSocket.h */,
+				FA477EC91E58301C008D5811 /* TestCocoAsyncSocket.m */,
+			);
+			name = BaseSocket;
+			sourceTree = "<group>";
+		};
+		FA477EBE1E582F34008D5811 /* GCDAsynSocket */ = {
+			isa = PBXGroup;
+			children = (
+				FA477EBF1E582F34008D5811 /* Documentation.html */,
+				FA477EC01E582F34008D5811 /* GCDAsyncSocket.h */,
+				FA477EC11E582F34008D5811 /* GCDAsyncSocket.m */,
+				FA477EC21E582F34008D5811 /* GCDAsyncUdpSocket.h */,
+				FA477EC31E582F34008D5811 /* GCDAsyncUdpSocket.m */,
+			);
+			path = GCDAsynSocket;
+			sourceTree = "<group>";
+		};
+		FA4E98F41E6122390094C021 /* WebSocket */ = {
+			isa = PBXGroup;
+			children = (
+				FA4E98F51E61225A0094C021 /* TestWebSocketRocket.h */,
+				FA4E98F61E61225A0094C021 /* TestWebSocketRocket.m */,
+			);
+			name = WebSocket;
 			sourceTree = "<group>";
 		};
 		FACE9AF81E51B11E00A964D3 /* Masonry */ = {
@@ -224,9 +317,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FA178EBD1E4C0B5C00937BD0 /* Build configuration list for PBXNativeTarget "TestQQChat" */;
 			buildPhases = (
+				F715A212475CAF121AC6E45F /* [CP] Check Pods Manifest.lock */,
 				FA178EA21E4C0B5A00937BD0 /* Sources */,
 				FA178EA31E4C0B5A00937BD0 /* Frameworks */,
 				FA178EA41E4C0B5A00937BD0 /* Resources */,
+				D52014390D06DC079E529462 /* [CP] Embed Pods Frameworks */,
+				9C5786DB800B26FAD2D99922 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -248,7 +344,7 @@
 				TargetAttributes = {
 					FA178EA51E4C0B5A00937BD0 = {
 						CreatedOnToolsVersion = 8.2.1;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -276,6 +372,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FACE9B131E51B11E00A964D3 /* Info.plist in Resources */,
+				FA477EC41E582F34008D5811 /* Documentation.html in Resources */,
 				FA178EB91E4C0B5C00937BD0 /* LaunchScreen.storyboard in Resources */,
 				FA0A05451E54394500115706 /* SmapleTableViewCell.xib in Resources */,
 				FA178EB61E4C0B5C00937BD0 /* Assets.xcassets in Resources */,
@@ -285,20 +382,73 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9C5786DB800B26FAD2D99922 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TestQQChat/Pods-TestQQChat-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D52014390D06DC079E529462 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TestQQChat/Pods-TestQQChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F715A212475CAF121AC6E45F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FA178EA21E4C0B5A00937BD0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA477EC51E582F34008D5811 /* GCDAsyncSocket.m in Sources */,
 				FACE9B161E51B11E00A964D3 /* MASConstraintMaker.m in Sources */,
 				FA178EC31E4C157000937BD0 /* ChatViewCell.m in Sources */,
 				FA178EB11E4C0B5B00937BD0 /* ViewController.m in Sources */,
 				FACE9B201E51B22000A964D3 /* ChatInfoModel.m in Sources */,
 				FACE9B151E51B11E00A964D3 /* MASConstraint.m in Sources */,
+				FA477EC61E582F34008D5811 /* GCDAsyncUdpSocket.m in Sources */,
+				FA4E98F71E61225A0094C021 /* TestWebSocketRocket.m in Sources */,
 				FA3400DA1E52AEA60010F0F1 /* ChatInputView.m in Sources */,
 				FACE9B2B1E51BAA200A964D3 /* UITableView+FDKeyedHeightCache.m in Sources */,
 				FACE9B1D1E51B11E00A964D3 /* ViewController+MASAdditions.m in Sources */,
 				FACE9B171E51B11E00A964D3 /* MASLayoutConstraint.m in Sources */,
+				FA477ECA1E58301C008D5811 /* TestCocoAsyncSocket.m in Sources */,
+				FA477EBD1E58225D008D5811 /* TestSocketManager.m in Sources */,
 				FACE9B2A1E51BAA200A964D3 /* UITableView+FDIndexPathHeightCache.m in Sources */,
 				FACE9B2C1E51BAA200A964D3 /* UITableView+FDTemplateLayoutCell.m in Sources */,
 				FACE9B1A1E51B11E00A964D3 /* NSArray+MASAdditions.m in Sources */,
@@ -310,6 +460,7 @@
 				FA178EAB1E4C0B5B00937BD0 /* main.m in Sources */,
 				FACE9B141E51B11E00A964D3 /* MASCompositeConstraint.m in Sources */,
 				FACE9B1B1E51B11E00A964D3 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				FA0A05491E545B6000115706 /* TestNSUrl.m in Sources */,
 				FACE9B2D1E51BAA200A964D3 /* UITableView+FDTemplateLayoutCellDebug.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -376,7 +527,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -418,7 +569,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -428,9 +579,12 @@
 		};
 		FA178EBE1E4C0B5C00937BD0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 461DE7EFA7DD619288992CB8 /* Pods-TestQQChat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = TestQQChat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = js.TestQQChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -439,9 +593,12 @@
 		};
 		FA178EBF1E4C0B5C00937BD0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82CB2E393898B7A27D971B22 /* Pods-TestQQChat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = TestQQChat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = js.TestQQChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";

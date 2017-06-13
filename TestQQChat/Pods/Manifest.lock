@@ -1,0 +1,15 @@
+PODS:
+  - MJRefresh (3.1.12)
+  - SocketRocket (0.5.1)
+
+DEPENDENCIES:
+  - MJRefresh (~> 3.1.12)
+  - SocketRocket (~> 0.5.1)
+
+SPEC CHECKSUMS:
+  MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
+  SocketRocket: d57c7159b83c3c6655745cd15302aa24b6bae531
+
+PODFILE CHECKSUM: e2f960a79cad2bb90beb157103d68748394c45da
+
+COCOAPODS: 1.1.1
